@@ -1,0 +1,26 @@
+{
+  "name": "Hitesh Choudhary Website",
+  "authors": [
+    "Raman Choudhary <raman.choudhary65@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "keywords": [
+    "hitesh",
+    "choudhary"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "moment": "momentjs#^2.18.1",
+    "font-awesome": "^4.7.0",
+    "bootstrap": "^3.3.7"
+  }
+}

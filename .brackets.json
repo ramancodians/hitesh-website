@@ -1,0 +1,15 @@
+{
+    "path": {
+        "styles/scss/*.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../css/",
+                "includePaths": [],
+                "sourceComments": "map",
+                "outputStyle": "compressed"
+            },
+            "custom.work.toggleToolbar": true,
+            "linting.collapsed": true
+        }
+    }
+}

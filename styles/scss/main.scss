@@ -1,0 +1,270 @@
+@import 'mediaQuery';
+
+
+// variables
+$baseColor: #222;
+$mono : 'Roboto Mono', monospace;
+$lato : 'Lato', sans-serif;
+
+.container{
+	max-width: 900px;
+}
+
+body{
+	font-family: $lato;
+	background: #eee;
+    padding-top: 55px;
+}
+
+header {
+	background: $baseColor;
+	padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0px;
+	#logo {
+		width: auto;
+		height: 50px;
+	}
+	
+	.hc{
+		font-size: 25px;
+		font-family: $mono;
+		color: #FFF;
+		padding: relative;
+		top: 10px;
+		transform:translateY(10px);
+	}
+	.top-navigation {
+		text-align: right;
+		ul {
+			a {
+				color: #FFF;
+				
+				li {
+					list-style: none;
+					float: right;
+					padding: 0px 20px;
+					display: inline;
+					&:hover {
+						background: pink;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+.hero-content{
+	background: url('http://hiteshchoudhary.com/wp-content/uploads/2017/02/hitesh-bg2.png') no-repeat center center;
+	background-size: cover;
+	background-position: top -200px;
+	padding-bottom: 50px;
+	min-height: 80vh;
+    position: relative;
+	.hero-text{
+		margin-top: 100px;;
+		.code{
+			position: relative;
+			font-family: $mono;
+			font-weight: bold;
+			font-size: 50px;
+			color: #26F9D8;
+			.var{
+				color : #F82C68;
+			}
+			.init{
+				color: #FFF;
+			}
+		}
+		
+		.intro{
+			padding-top: 40px;
+			color: #EEE;
+			font-size: 25px;
+			font-weight: 300;
+		}
+	}
+	
+	.call-to-action{
+			padding-top: 40px;
+		}
+}
+
+.video-section{
+	padding: 50px 0px;
+}
+
+// Video
+.video-wrap{
+	margin-top: 20px;
+	background: #FFF;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.1);
+    transition-duration: 0.2s;
+    cursor: pointer;
+    
+    &:hover{
+        box-shadow: 0px 2px 20px 3px rgba(0,0,0,0.2);
+        transform: scale(1.02);
+    }
+	
+	@include phone{
+		margin: 10px;
+		overflow:hidden;
+	}
+	
+	.cont-wrap{
+		padding: 10px;
+		flex:1;
+		
+		h3{
+			font-size:25px;
+			margin: 15px 0px;
+		}
+		
+		time{
+			color: #999;
+		}
+	}
+	
+}
+
+.contact{
+    padding: 50px 0px;
+}
+
+
+// footer
+.reviews{
+	background: url('./../../imgs/Home.jpg') no-repeat center center;
+    background-position: top right;
+    background-size: cover;
+	padding: 70px 0px;
+    position: relative;
+    z-index: 1;
+    
+    .review{
+        background: #FFF;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #DDD;
+        min-height: 220px;
+        margin: 15px auto;
+        box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.1);
+        
+        .cont{
+            p{
+                overflow: hidden;
+            }
+        }
+    }
+    
+    &:after{
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background: rgba(#000,0.7);
+        z-index: -1;
+    }
+    
+    .stars{
+        color: goldenrod;
+    }
+    
+    .title{
+        color: #FFF;
+        font-weight: 300;
+        margin-bottom: 60px;
+        
+    }
+}
+
+//custom styles for BT
+.btn-cus{
+	background: transparent;
+	border: rgba(#fff,0.2) 1px solid;
+	padding: 12px 20px;
+	border-radius: 40px;
+	&:last-child{
+		margin-left: 20px;
+	}
+}
+
+.img-res{
+	width: 100%;
+	height: auto;
+}
+
+#yt-icon{
+	color:#E62117 !important;
+	font-size: 1.3em;
+}
+
+#camera-icon{
+	color:#0460A1 !important;
+	font-size: 1.3em;
+}
+
+.w100{
+	width: 100% !important;
+}
+
+button.next-page{
+	margin-top: 30px;
+	padding: 10px 20px;
+}
+
+.iframe-video{
+	width:calc(100%);
+	height: 600px;
+	
+	@include laptop{
+		height: 400px;
+	}
+	
+	@include tablet{
+		width: 100%;
+		height: 400px;
+	}
+	
+	@include phone{
+		height: 200px;
+	}
+	
+}
+
+.modal-content{
+	position: relative;
+}
+
+.typed-cursor{
+	opacity: 1;
+	color: #fff;
+	font-size: 3em;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
