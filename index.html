@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="styles/css/main.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".top-navigation">
   <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content show-video">
@@ -20,26 +21,32 @@
 <header>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-5">
-				<div>
+			<div class="col-md-5  col-xs-10">
+				<div class="hc-wrap">
 					<span class="hc">h:/></span>
 					<span class="hc">hitesh choudhary</span>
 				</div>
 			</div>
-			<div class="col-md-7">
+			<div class="col-xs-2 visible-sm visible-xs">
+			    <div class="mobile-menu">
+			        <i class="fa fa-bars"></i>
+			    </div>
+			</div>
+			<div class="col-md-7 col-xs-12">
 				<div class="top-navigation">
-					<ul>
-						<a href="">
+					<ul class="clearfix">
+						<a href="about-me.html">
 							<li>About me</li>
 						</a>
-						<a href="">
+						<a href="#review">
 							<li>Testimonials</li>
 						</a>
-						<a href="">
+						<a href="#contact">
 							<li>Reach me</li>
 						</a>
-						<a href="">
-							<li>YouTube</li>
+						<a href="https://www.youtube.com/user/hiteshitube" target="_blank">
+							<li class="hidden-xs">YouTube</li>
+							<li class="visible-xs"><i class="fa fa-youtube-play"></i></li>
 						</a>
 					</ul>
 				</div>
@@ -47,9 +54,12 @@
 		</div>
 	</div>
 </header>
+
+
 <div class="hero-content">
 	<div class="container">
-		<div class="col-md-8">
+		<div class="row">
+		    <div class="col-md-8">
 			<div class="hero-text">
 				<span class="code" id="typedHC"></span>
 				<p class="intro">
@@ -69,8 +79,8 @@
 		</div>
 		<div class="col-md-4">
 			<div>
-				<h1></h1>
 			</div>
+		</div>
 		</div>
 	</div>
 </div>
@@ -87,9 +97,13 @@
 
 		<div class="row video-area">
 			<!-- 			Video will be rendered here -->
+			<div class="video-loader text-center">
+                <h5>Loading Videos</h5>
+			    <i class="fa fa-spinner fa-pulse fa-fw fa-4x"></i>
+			</div>
 			
 	</div>
-		<div class="row">
+		<div class="row" id="loadMoreVideos">
 			<div class="col-xs-12">
 				<div class="text-center">
 				<span>More Videos </span> &nbsp;&nbsp;
@@ -98,17 +112,16 @@
 				</button>
 			</div>
 		</div>
-			</div>
+</div>
 		</div>
 </div>
 
-<div class="reviews">
+<div class="reviews" id="review">
     <div class="container">
        <div class="row">
            <h2 class="text-center title">
                We recieve lovely comments from our customers every week. Here are just a few of our favourites over the last couple of months…
            </h2>
-           
        </div>
         <div class="row">
             <div class="col-md-6">
@@ -291,23 +304,31 @@
     </div>
 </div>
 
-<div class="contact">
+<div class="contact" id="contact">
     <div class="container">
         <div class="row">
             <h1 class="text-center">
-                Contact me
+                Contact me on Social Media
             </h1>
         </div>
         <div class="row">
-            <div class="col-md-9">
-                <div class="contactWrap">
-                    
+            <div class="col-md-6">
+                    <a href="https://www.youtube.com/user/hiteshitube" target="_blank">
+                        <div class="yt">
+                    <i class="fa fa-youtube-play fa-4x"></i>
+                    <h2>Youtube</h2>
                 </div>
+                    </a>
             </div>
-            <div class="col-md-3">
-                <div>
-                    asdsadasd
+            <div class="col-md-6">
+               <a href="https://www.facebook.com/hiteshch0udhary" target="_blank">
+                <div class="fb">
+                   
+                    <i class="fa fa-facebook-official fa-4x"></i>
+                    <h2>Facebook</h2>
+                   
                 </div>
+                 </a>
             </div>
         </div>
     </div>
@@ -316,10 +337,19 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<div>
-					<h1>this is booter</h1>
-				</div>
+			<div class="col-sm-6">
+			    <div>
+			        <p>
+			            &copy; Hitesh Choudhary | 2017
+			        </p>
+			    </div>
+			</div>
+			<div class="col-sm-6">
+			    <div class="text-right">
+			        <p>
+			            Design by a friend <a href="https://raman.ch" target="_blank">Raman Choudhary</a>
+			        </p>
+			    </div>
 			</div>
 		</div>
 	</div>

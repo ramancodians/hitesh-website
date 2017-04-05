@@ -28,6 +28,18 @@ header {
 		height: 50px;
 	}
 	
+    .hc-wrap{
+        @include phone{
+            text-align: center;
+        }
+    }
+    
+    .mobile-menu{
+        color: #FFF !important;
+        font-size: 23px;
+        text-align: center;
+    }
+    
 	.hc{
 		font-size: 25px;
 		font-family: $mono;
@@ -35,20 +47,45 @@ header {
 		padding: relative;
 		top: 10px;
 		transform:translateY(10px);
+        
+        @include phone{
+            font-size: 20px;
+        }
 	}
 	.top-navigation {
 		text-align: right;
+        margin-top: 8px;
+        
+        @include tablet{
+            display: none;
+        }
+        
 		ul {
+            padding: 0px;
+            margin: 0px;
 			a {
 				color: #FFF;
+                
+                &:last-child li{
+                    border: none;
+                }
 				
 				li {
 					list-style: none;
 					float: right;
 					padding: 0px 20px;
 					display: inline;
+                    
+                    @include tablet{
+                        display: block;
+                        padding: 10px 0px;
+                        float: none;
+                        border-bottom:1px solid #555;
+                       
+                    }
+                    
 					&:hover {
-						background: pink;
+						background: #111;
 					}
 				}
 			}
@@ -59,11 +96,10 @@ header {
 
 
 .hero-content{
-	background: url('http://hiteshchoudhary.com/wp-content/uploads/2017/02/hitesh-bg2.png') no-repeat center center;
+	background: url('../../imgs/header.JPG') no-repeat center center;
 	background-size: cover;
 	background-position: top -200px;
 	padding-bottom: 50px;
-	min-height: 80vh;
     position: relative;
 	.hero-text{
 		margin-top: 100px;;
@@ -136,12 +172,75 @@ header {
 
 .contact{
     padding: 50px 0px;
+    background: #DDD;
+    
+    .fa{
+        color: #FFF !important;
+    }
+    
+    a{
+        color: #FFF;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    
+    .yt,.fb{
+        background: #E62117;
+        padding: 20;
+        height: 200px;
+        text-align: center;
+        padding-top: 60px;
+        
+        &:hover{
+            background: #E62117 - 30;
+        }
+    }
+    
+    .fb{
+        background: #3B5998;
+         &:hover{
+            background: #3B5998 - 30;
+        }
+    }
+    
+    h2{
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    h1{
+        padding-bottom: 50px;
+    }
+    
+    .contactWrap{
+        background: #FFF;
+        padding: 30px;
+    }
+    .sideWrap{
+        background: yellow;
+        padding: 30px;
+        
+        .media{
+            a{
+                font-size: 25px;
+                color: #333;
+            }
+        }
+    }
+}
+
+footer{
+    background: #222;
+    color: #ccc !important;
+    padding: 20px 0px;
+    padding-bottom: 120px;
 }
 
 
 // footer
 .reviews{
-	background: url('./../../imgs/Home.jpg') no-repeat center center;
+	background: url('./../../imgs/Home.jpg') no-repeat center fixed;
     background-position: top right;
     background-size: cover;
 	padding: 70px 0px;
@@ -187,6 +286,69 @@ header {
     }
 }
 
+// About me
+
+.about-hero-content{
+    padding-bottom: 50px;
+    img{
+        max-width: 400px;
+        margin: 0px auto;
+    }
+    
+    .bn{
+        background: #739bed;
+        text-align: center;
+        h1{
+            padding: 0px;
+            margin: 10px;
+            color: #FFF;
+        }
+    }
+    
+    .wid{
+        text-align: center;
+        margin-top: 20px;
+        background: #FFF;
+        padding: 15px;
+        border-radius: 5px;
+        min-height: 400px;
+        
+        img{
+            max-width: 100px;
+            margin: 20px auto;
+            padding-bottom: 10;
+        }
+        h3{
+            padding: 0px;
+            margin: 0px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.faq{
+    background: #FFF;
+    padding: 100px 0px;
+}
+
+.testomonials{
+    padding: 30px auto;
+    .carousel-control{
+        background: none;
+    }
+    .t{
+        background:#FFF;
+        width: 60%;
+        margin: 40px auto;
+        padding: 20px;
+        
+        @include phone{
+            width: 80%;
+        }
+    }
+}
+
+
 //custom styles for BT
 .btn-cus{
 	background: transparent;
@@ -215,11 +377,23 @@ header {
 
 .w100{
 	width: 100% !important;
+    
+    @for $i from 1 to 10 {
+      &:nth-child(#{$i + 1}) { animation-delay: $i * 0.1s; }
+    }
 }
 
 button.next-page{
 	margin-top: 30px;
 	padding: 10px 20px;
+}
+
+#loadMoreVideos{
+    display: none;
+    
+    i.fa{
+        color: #21679b !important;
+    }
 }
 
 .iframe-video{
