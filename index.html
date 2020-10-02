@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Hitesh Choudhary</title>
@@ -10,357 +11,382 @@
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="styles/css/main.css">
 </head>
+
 <body data-spy="scroll" data-target=".top-navigation">
-  <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content show-video">
-      <iframe class="iframe-video" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
-<header>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-5  col-xs-10">
-				<div class="hc-wrap">
-					<span class="hc">h:/></span>
-					<span class="hc">hitesh choudhary</span>
-				</div>
-			</div>
-			<div class="col-xs-2 visible-sm visible-xs">
-			    <div class="mobile-menu">
-			        <i class="fa fa-bars"></i>
-			    </div>
-			</div>
-			<div class="col-md-7 col-xs-12">
-				<div class="top-navigation">
-					<ul class="clearfix">
-						<a href="about-me.html">
-							<li>About me</li>
-						</a>
-						<a href="#review">
-							<li>Testimonials</li>
-						</a>
-						<a href="#contact">
-							<li>Reach me</li>
-						</a>
-						<a href="https://www.youtube.com/user/hiteshitube" target="_blank">
-							<li class="hidden-xs">YouTube</li>
-							<li class="visible-xs"><i class="fa fa-youtube-play"></i></li>
-						</a>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</header>
-
-
-<div class="hero-content">
-	<div class="container">
-		<div class="row">
-		    <div class="col-md-8">
-			<div class="hero-text">
-				<span class="code" id="typedHC"></span>
-				<p class="intro">
-					Hi, My name is Hitesh. I mainly write code for web applictions and Mobile apps. I also teach people, “How to write code”. I am a Youtuber and sometimes I talk at events too. There is a About Me page for more details. Also you can watch my Video resume
-					by clicking here.
-				</p>
-			</div>
-
-			<div class="call-to-action">
-				<button class="btn btn-success btn-cus" data-toggle="modal" data-target="#myModal">
-					<i class="fa fa-youtube-play" id="yt-icon"></i> Youtube Channel
-				</button>
-				<button class="btn btn-success btn-cus">
-					<i class="fa fa-video-camera" id="camera-icon"></i> My Video Resume
-				</button>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div>
-			</div>
-		</div>
-		</div>
-	</div>
-</div>
-
-<div class="video-section">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<div>
-					<h2>My recent videos</h2>
-				</div>
-			</div>
-		</div>
-
-		<div class="row video-area">
-			<!-- 			Video will be rendered here -->
-			<div class="video-loader text-center">
-                <h5>Loading Videos</h5>
-			    <i class="fa fa-spinner fa-pulse fa-fw fa-4x"></i>
-			</div>
-			
-	</div>
-		<div class="row" id="loadMoreVideos">
-			<div class="col-xs-12">
-				<div class="text-center">
-				<span>More Videos </span> &nbsp;&nbsp;
-				<button class="next-page">
-					<i class="fa fa-angle-down"></i>
-				</button>
-			</div>
-		</div>
-</div>
-		</div>
-</div>
-
-<div class="reviews" id="review">
-    <div class="container">
-       <div class="row">
-           <h2 class="text-center title">
-               We recieve lovely comments from our customers every week. Here are just a few of our favourites over the last couple of months…
-           </h2>
-       </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="review">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <div class="user text-center">
-                                <img src="imgs/users/001-boy-1.png" class="img-responsive" alt="">
-                                <h5>Micah Laizure</h5>
-                                <h6>2 months ago</h6>
-                                
-                            </div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="cont">
-                                <h4 class="stars">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </h4>
-                                <p>
-                                    Thank you so much for this course. You are very good at explaining thoroughly the "why' you are doing what your doing. You never assume the student understands which is a great trait. Great job and I'm looking forward to your next course! I will gladly purchase! 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content show-video">
+                <iframe class="iframe-video" frameborder="0" allowfullscreen></iframe>
             </div>
-                      
-            <div class="col-md-6">
-                <div class="review">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <div class="user text-center">
-                                <img src="imgs/users/003-boy.png" class="img-responsive" alt="">
-                                <h5>Praveen Samuel</h5>
-                                <h6>4 months ago</h6>
-                                
-                            </div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="cont">
-                                <h4 class="stars">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </h4>
-                                <p>
-                                    First of all I like to thank, Hitesh. This is an awesome course from scratch. It is the best course for beginners who like to start developing apps for iOS. The way he take the course is nice and I loved it. I had gone through his youtube channel and watched all his videos without bored even it is long, and I have seen some of the iOS app development channels like stanford iOS app development etc.... But I feel this is the right place to learn many keys and topics of iOS app development. This helps the beginners to become masters soon and this is my first paid course and never worthless. -- I Love iT, I Learn IT I Rate iT --and one more thing Hitesh gives you extra than what he says.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                      
-                      
-                      <div class="col-md-6">
-                <div class="review">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <div class="user text-center">
-                                <img src="imgs/users/004-man-3.png" class="img-responsive" alt="">
-                                <h5>Krisztian kormos</h5>
-                                <h6>4 months ago</h6>
-                                
-                            </div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="cont">
-                                <h4 class="stars">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </h4>
-                                <p>
-                                   Its really easy to understand so far and really rewarding to see my first app on my phone! Also if we had customer service like this our world would be a better place! 
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                      
-            <div class="col-md-6">
-                <div class="review">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <div class="user text-center">
-                                <img src="imgs/users/002-girl-1.png" class="img-responsive" alt="">
-                                <h5>Flora Onkst</h5>
-                                <h6>2 months ago</h6>
-                            </div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="cont">
-                                <h4 class="stars">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </h4>
-                                <p>
-                                    Offering sound, practical and realistic advice about prerequisites and additional software that will be needed. He is not promising miracles. Just a rational approach to developing simple applications using tried and true methods.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                      
-            <div class="col-md-6">
-                <div class="review">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <div class="user text-center">
-                                <img src="imgs/users/007-man-1.png" class="img-responsive" alt="">
-                                <h5>Alessio Anastasi</h5>
-                                <h6>5 months ago</h6>
-                            </div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="cont">
-                                <h4 class="stars">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </h4>
-                                <p>
-                                    It's pretty simple. Clear, easy to understand, funny and fast at the same time. I purchased this course at just $10 and honestly man, now that i understand how much you have worked at this course I almost feel guilty! Nice work and thanks! 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                  
-                      
-             <div class="col-md-6">
-                <div class="review">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <div class="user text-center">
-                                <img src="imgs/users/005-man-2.png" class="img-responsive" alt="">
-                                <h5>Keith Wilkinson</h5>
-                                <h6>4 months ago</h6>
-                            </div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="cont">
-                                <h4 class="stars">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </h4>
-                                <p>
-                                   From you tube excerpts and the introductory information, I find Hitesh's videos informative, friendly and useful. It takes a great deal for me to part with money, particularly on the Internet - so well done Hitesh. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-                      
-                       
-            
         </div>
     </div>
-</div>
-
-<div class="contact" id="contact">
-    <div class="container">
-        <div class="row">
-            <h1 class="text-center">
-                Contact me on Social Media
-            </h1>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5  col-xs-10">
+                    <div class="hc-wrap">
+                        <span class="hc">h:/></span>
+                        <span class="hc">hitesh choudhary</span>
+                    </div>
+                </div>
+                <div class="col-xs-2 visible-sm visible-xs">
+                    <div class="mobile-menu">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+                <div class="col-md-7 col-xs-12">
+                    <div class="top-navigation">
+                        <ul class="clearfix">
+                            <a href="about-me.html">
+                                <li>About me</li>
+                            </a>
+                            <a href="#review">
+                                <li>Testimonials</li>
+                            </a>
+                            <a href="#contact">
+                                <li>Reach me</li>
+                            </a>
+                            <a href="https://www.youtube.com/user/hiteshitube" target="_blank">
+                                <li class="hidden-xs">YouTube</li>
+                                <!-- <li class="visible-xs"><i class="fa fa-youtube-play"></i></li> -->
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
+    </header>
+
+
+    <div class="hero-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="hero-text">
+                        <span class="code" id="typedHC"></span>
+                        <p class="intro">
+                            Hi, My name is Hitesh. I mainly write code for web applictions and Mobile apps. I also teach
+                            people, “How to write code”. I am a Youtuber and sometimes I talk at events too. There is a
+                            About Me page for more details. Also you can watch my Video resume
+                            by clicking here.
+                        </p>
+                    </div>
+
+                    <div class="call-to-action">
+                        <button class="btn btn-success btn-cus" data-toggle="modal" data-target="#myModal">
+                            <i class="fa fa-youtube-play" id="yt-icon"></i> Youtube Channel
+                        </button>
+                        <button class="btn btn-success btn-cus">
+                            <i class="fa fa-video-camera" id="camera-icon"></i> My Video Resume
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div>
+                        <h2>My recent videos</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row video-area">
+                <!-- 			Video will be rendered here -->
+                <div class="video-loader text-center">
+                    <h5>Loading Videos</h5>
+                    <i class="fa fa-spinner fa-pulse fa-fw fa-4x"></i>
+                </div>
+
+            </div>
+            <div class="row" id="loadMoreVideos">
+                <div class="col-xs-12">
+                    <div class="text-center">
+                        <span>More Videos </span> &nbsp;&nbsp;
+                        <button class="next-page">
+                            <i class="fa fa-angle-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews" id="review">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center title">
+                    We recieve lovely comments from our customers every week. Here are just a few of our favourites over
+                    the last couple of months…
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="review">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <div class="user text-center">
+                                    <img src="imgs/users/001-boy-1.png" class="img-responsive" alt="">
+                                    <h5>Micah Laizure</h5>
+                                    <h6>2 months ago</h6>
+
+                                </div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="cont">
+                                    <h4 class="stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </h4>
+                                    <p>
+                                        Thank you so much for this course. You are very good at explaining thoroughly
+                                        the "why' you are doing what your doing. You never assume the student
+                                        understands which is a great trait. Great job and I'm looking forward to your
+                                        next course! I will gladly purchase!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="review">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <div class="user text-center">
+                                    <img src="imgs/users/003-boy.png" class="img-responsive" alt="">
+                                    <h5>Praveen Samuel</h5>
+                                    <h6>4 months ago</h6>
+
+                                </div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="cont">
+                                    <h4 class="stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </h4>
+                                    <p>
+                                        First of all I like to thank, Hitesh. This is an awesome course from scratch. It
+                                        is the best course for beginners who like to start developing apps for iOS. The
+                                        way he take the course is nice and I loved it. I had gone through his youtube
+                                        channel and watched all his videos without bored even it is long, and I have
+                                        seen some of the iOS app development channels like stanford iOS app development
+                                        etc.... But I feel this is the right place to learn many keys and topics of iOS
+                                        app development. This helps the beginners to become masters soon and this is my
+                                        first paid course and never worthless. -- I Love iT, I Learn IT I Rate iT --and
+                                        one more thing Hitesh gives you extra than what he says.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="review">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <div class="user text-center">
+                                    <img src="imgs/users/004-man-3.png" class="img-responsive" alt="">
+                                    <h5>Krisztian kormos</h5>
+                                    <h6>4 months ago</h6>
+
+                                </div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="cont">
+                                    <h4 class="stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </h4>
+                                    <p>
+                                        Its really easy to understand so far and really rewarding to see my first app on
+                                        my phone! Also if we had customer service like this our world would be a better
+                                        place!
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="review">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <div class="user text-center">
+                                    <img src="imgs/users/002-girl-1.png" class="img-responsive" alt="">
+                                    <h5>Flora Onkst</h5>
+                                    <h6>2 months ago</h6>
+                                </div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="cont">
+                                    <h4 class="stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </h4>
+                                    <p>
+                                        Offering sound, practical and realistic advice about prerequisites and
+                                        additional software that will be needed. He is not promising miracles. Just a
+                                        rational approach to developing simple applications using tried and true
+                                        methods.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="review">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <div class="user text-center">
+                                    <img src="imgs/users/007-man-1.png" class="img-responsive" alt="">
+                                    <h5>Alessio Anastasi</h5>
+                                    <h6>5 months ago</h6>
+                                </div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="cont">
+                                    <h4 class="stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </h4>
+                                    <p>
+                                        It's pretty simple. Clear, easy to understand, funny and fast at the same time.
+                                        I purchased this course at just $10 and honestly man, now that i understand how
+                                        much you have worked at this course I almost feel guilty! Nice work and thanks!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="review">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <div class="user text-center">
+                                    <img src="imgs/users/005-man-2.png" class="img-responsive" alt="">
+                                    <h5>Keith Wilkinson</h5>
+                                    <h6>4 months ago</h6>
+                                </div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="cont">
+                                    <h4 class="stars">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </h4>
+                                    <p>
+                                        From you tube experts and the introductory information, I find Hitesh's videos
+                                        informative, friendly and useful. It takes a great deal for me to part with
+                                        money, particularly on the Internet - so well done Hitesh.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">
+                    Contact me on Social Media
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
                     <a href="https://www.youtube.com/user/hiteshitube" target="_blank">
                         <div class="yt">
-                    <i class="fa fa-youtube-play fa-4x"></i>
-                    <h2>Youtube</h2>
-                </div>
+                            <i class="fa fa-youtube-play fa-4x"></i>
+                            <h2>Youtube</h2>
+                        </div>
                     </a>
-            </div>
-            <div class="col-md-6">
-               <a href="https://www.facebook.com/hiteshch0udhary" target="_blank">
-                <div class="fb">
-                   
-                    <i class="fa fa-facebook-official fa-4x"></i>
-                    <h2>Facebook</h2>
-                   
                 </div>
-                 </a>
+                <div class="col-md-6">
+                    <a href="https://www.facebook.com/hiteshch0udhary" target="_blank">
+                        <div class="fb">
+
+                            <i class="fa fa-facebook-official fa-4x"></i>
+                            <h2>Facebook</h2>
+
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6">
-			    <div>
-			        <p>
-			            &copy; Hitesh Choudhary | 2017
-			        </p>
-			    </div>
-			</div>
-			<div class="col-sm-6">
-			    <div class="text-right">
-			        <p>
-			            Design by a friend <a href="https://raman.ch" target="_blank">Raman Choudhary</a>
-			        </p>
-			    </div>
-			</div>
-		</div>
-	</div>
-</footer>
-   
-<!--   JS -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="js/typed.js"></script>
-<script src="js/readmore.js"></script>
-<script src="bower_components/moment/moment.js"></script>
-<script src="js/main.js"></script>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div>
+                        <p>
+                            &copy; Hitesh Choudhary | 2017
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="text-right">
+                        <p>
+                            Design by a friend <a href="https://raman.ch" target="_blank">&copy;Raman Choudhary</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--   JS -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/readmore.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
